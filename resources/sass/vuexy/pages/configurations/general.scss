@@ -1,0 +1,42 @@
+.configuration {
+    font-size: 0.8rem;
+
+    .vs-input--input.normal {
+        font-size: 0.8rem;
+    }
+    .wrap-form-select {
+        // font-size: 0.8rem;
+        margin-top: 4px;
+        position: relative;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .vs__search, .vs__search:focus {
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        line-height: 2;
+    }
+
+    .vs__selected-options {
+
+        display: flex;
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-wrap: initial;
+        padding: 0 2px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        white-space: nowrap;
+    }
+    .vs__selected {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        min-width: 1px;
+    }
+}

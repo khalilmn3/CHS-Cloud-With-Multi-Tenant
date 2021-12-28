@@ -1,0 +1,198 @@
+.form_deposit_charge.two_column.con-vs-popup .vs-popup{
+    width: auto;
+
+    @media only screen and (min-width: 600px) {
+
+        div.content-left {
+            border-right: 1px dashed rgb(197, 197, 197);
+            padding-right: 10px;
+            width: 450px;
+        }
+        .vs-col.content-right {
+            padding-left: 10px;
+            width: 450px;
+        }
+        .vs-divider.divider-title  {
+            margin: 0px;
+        }
+    }
+    #transaction{
+        width: 450px;
+    }
+
+    #expDate .vs__dropdown-menu{
+        min-width: 30px;
+    }
+
+    .form_deposit_charge {
+       //POPUP
+        .vs-popup{
+            width: auto;
+
+            .form-content{
+                width: 450px;
+            }
+
+            @media only screen and (min-width: 600px) {
+
+                div.content-left {
+                    border-right: 1px dashed rgb(197, 197, 197);
+                    padding-right: 10px;
+                    width: 450px;
+                }
+                .vs-col.content-right {
+                    padding-left: 10px;
+                    width: 450px;
+                }
+                .vs-divider.divider-title  {
+                    margin: 0px;
+                }
+            }
+
+        }
+    }
+}
+
+.form_deposit_charge.two_column.con-vs-dialog .vs-dialog{
+    width: auto;
+    @media only screen and (min-width: 600px) {
+        max-width: 950px;
+        div.content-left {
+            border-right: 1px dashed rgb(197, 197, 197);
+            padding-right: 10px;
+            width: 450px;
+        }
+        .vs-col.content-right {
+            padding-left: 10px;
+            width: 450px;
+        }
+        .vs-divider.divider-title  {
+            margin: 0px;
+        }
+    }
+    #transaction{
+        width: 450px;
+    }
+
+    #expDate .vs__dropdown-menu{
+        min-width: 30px;
+    }
+}
+
+
+
+.form_deposit_charge {
+    //POPUP
+    .vs-popup{
+        width: auto;
+        .form-content{
+            width: 450px;
+            .sub-folio{
+                font-size: .8rem
+            }
+        }
+        .vs-popup--content {
+            overflow: auto;
+        }
+        @media only screen and (min-width: 600px) {
+
+            div.content-left {
+                border-right: 1px dashed rgb(197, 197, 197);
+                padding-right: 10px;
+                width: 450px;
+            }
+            .vs-col.content-right {
+                padding-left: 10px;
+                width: 450px;
+            }
+            .vs-divider.divider-title  {
+                margin: 0px;
+            }
+        }
+
+        #expDate .vs__dropdown-menu{
+            min-width: 30px;
+        }
+    }
+    //PROMP
+    .vs-dialog{
+        width: auto;
+        .form-content{
+            width: 450px;
+            .sub-folio{
+                font-size: .8rem
+            }
+        }
+        .vs-dialog-text {
+            overflow: auto;
+        }
+        @media only screen and (min-width: 600px) {
+            max-width: 950px;
+
+            div.content-left {
+                border-right: 1px dashed rgb(197, 197, 197);
+                padding-right: 10px;
+                width: 450px;
+            }
+            .vs-col.content-right {
+                padding-left: 10px;
+                width: 450px;
+            }
+            .vs-divider.divider-title  {
+                margin: 0px;
+            }
+        }
+
+        #expDate .vs__dropdown-menu{
+            min-width: 30px;
+        }
+    }
+}
+
+
+
+.payment-option{
+    .vs-dialog {
+        width: 450px;
+        max-width: 450px !important;
+    }
+
+    .box{
+        .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+            width: 170px;
+        }
+        @media screen and (min-width: 600px) {
+            #row1{
+                margin-bottom: 15px;
+            }
+            .button1{
+                margin-left: 20px !important;
+            }
+            .button2{
+                margin-left: 15px !important;
+            }
+            .button3{
+                margin-left: 20px !important;
+            }
+            .button4{
+                margin-left: 15px !important;
+            }
+        }
+
+        @media screen and (max-width: 579px) {
+
+            // #cash{
+            //     margin
+            // }
+            #card{
+                margin-top:5px
+            }
+            #direct-bill{
+                margin-top:5px
+            }
+            #other-payment{
+                margin-top:5px
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+
+import Resource from '@/api/resource';
+import request from '@/utils/request';
+
+const tableName = 'folio';
+const uri = 'masterfolio';
+
+class MasterFolioResource extends Resource {
+    constructor(){
+        super(uri);
+    }
+
+    log(id) {
+        return request({
+        url: '/tracking/log/'+tableName+'/'+id,
+        method: 'get'
+        });
+    }
+
+    createMasterFolioGroup(data){
+        return request({
+            url: '/'+uri+'/mastergroup',
+            method: 'post',
+            data: data
+        })
+    }
+
+    isFolioGroupExist(data){
+        return request({
+            url: '/'+uri+'/mastergroupexist',
+            method: 'post',
+            data: data
+        })
+    }
+
+    getMasterFolioGroup(data){
+        return request({
+            url: '/'+uri+'/mastergroup/getmaster',
+            method: 'post',
+            data: data
+        })
+    }
+
+    lookup(params){
+        return request({
+            url: '/'+uri+'/form/lookup',
+            method: 'get',
+            params: params
+        })
+    }
+
+
+    account(params){
+        return request({
+            url: '/'+uri+'/form/account',
+            method: 'get',
+            params: params
+        })
+    }
+
+    folioType(params){
+        return request({
+            url: '/'+uri+'/form/foliotype',
+            method: 'get',
+            params: params
+        })
+    }
+
+    listRouting(){
+        return request({
+            url: '/'+uri+'/transfer/list/routing',
+            method: 'get',
+        })
+    }
+
+    listFolio(params){
+        return request({
+            url: '/'+uri+'/transfer/list/folio',
+            method: 'get',
+            params: params
+        })
+    }
+
+    transfer(data){
+        return request({
+            url: '/'+uri+'/transfer/transaction',
+            method: 'post',
+            data: data
+        })
+    }
+
+    exchangeRate(params){
+        return request({
+            url: '/'+uri+'/form/exchrate',
+            method: 'get',
+            params: params
+        })
+    }
+
+    charge(data){
+        return request({
+            url: '/'+uri+'/charge',
+            method: 'post',
+            data: data
+        })
+    }
+
+    payment(data){
+        return request({
+            url: '/'+uri+'/payment',
+            method: 'post',
+            data: data
+        })
+    }
+    correction(data){
+        return request({
+            url: '/'+uri+'/correction',
+            method: 'post',
+            data: data
+        })
+    }
+
+    void(data){
+        return request({
+            url: '/'+uri+'/void',
+            method: 'post',
+            data: data
+        })
+    }
+}
+
+export { MasterFolioResource as default };

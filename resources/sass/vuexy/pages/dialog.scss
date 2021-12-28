@@ -1,0 +1,225 @@
+@import "../_variables.scss";
+
+//General
+.con-vs-dialog{
+    z-index: 520000;
+
+    //vue-Select Estimation 6 items
+    .vs__dropdown-menu {
+        max-height: 150px;
+    }
+}
+
+//Second Dialog => Use IF Nested Dialog
+.con-vs-dialog.dialog-second{
+    z-index: 520001;
+}
+//Three Dialog => Use IF Nested Dialog
+.con-vs-dialog.dialog-three{
+    z-index: 5200012;
+}
+
+//Menu Report
+.con-vs-dialog.options-report {
+    .vs-dialog {
+        max-width: 800px;
+
+        .vs-dialog-text {
+            padding: 0;
+            overflow: visible !important;
+
+            .scroll-area {
+                max-height: calc(var(--vh, 1vh) * 100 - 135px);
+
+                &:not(.ps) {
+                    overflow-y: auto;
+                }
+            }
+            .vs__selected-options{
+                width: 280px;
+            }
+            .vs__dropdown-option {
+                padding: 2px;
+                // width: 400px;
+            }   
+        }
+    }
+}
+
+//Report Editor
+.con-vs-dialog.editor-report {
+    .vs-dialog {
+        max-width: 999px;
+    }
+    .vs-dialog-text {
+        padding: 0;
+        overflow: visible !important;
+
+        .scroll-area {
+            max-height: calc(var(--vh, 1vh) * 100 - 90px);
+
+            &:not(.ps) {
+                overflow-y: auto;
+            }
+        }
+    }    
+}
+
+//use this class if crud
+.con-vs-dialog.dialog-body{
+    .vs-dialog-text{
+        font-size: 0.8rem;
+
+        //vs-Text Area
+        .vs-textarea {
+            font-size: 0.8rem;
+        }
+
+        //vs-input
+        .vs-input {
+            width: 45%;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        .vs-input--input.normal {
+            font-size: 0.8rem;
+        }
+        .vs-input--placeholder {
+            font-size: 0.8rem;
+        }
+        .vs-input--label {
+            font-size: 0.8rem;
+            padding-left: 0px;
+        }
+        .label {
+            font-size: 0.8rem;
+            padding-left: 0.5rem;
+        }
+        .vs-input-number {
+            margin-top: 20px;
+            font-size: 0.7rem;
+        }
+        .number-input{
+            margin: 0px;
+            margin-top: auto;
+        }
+
+        //DateTime Picker
+        .mx-input {
+            font-size: .8rem;
+        }
+        .vdp-datepicker input {
+            padding: 0.5rem;
+            font-size: 0.8rem;
+            line-height: 1.6;
+        }
+        .vdp-datepicker__calendar {
+            width: 98%;
+            font-size: 0.8rem;
+        }
+
+        //vs-radio
+        .con-vs-radio {
+            margin-top: 10px;
+        }
+        //vs tabs
+        .con-vs-tabs .con-slot-tabs {
+            position: relative;
+            display: block;
+            overflow: auto;;
+        }
+        .con-vs-tabs .con-ul-tabs{
+            z-index: 1
+        }
+
+        //v-select
+        .con-select {
+            width: 50%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .wrap-form-select {
+            font-size: 0.8rem;
+            margin-top: 4px;
+            position: relative;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        // Check Box
+        .vs-checkbox {
+            width: 15px;
+            height: 15px;
+        }
+
+        .con-vs-checkbox {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        .vs__search, .vs__search:focus {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            line-height: 2;
+        }
+
+        .vs__selected-options {
+            display: flex;
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-wrap: initial;
+            padding: 0 2px;
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            white-space: nowrap;
+        }
+        .vs__selected {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            min-width: 1px;
+        }
+
+        //Divider
+        .divider {
+            border: 1px outset #d9d9d9 !important;
+            height: 1px !important;
+        }
+
+        //Validation
+        .error-text {
+            font-size: 0.65rem;
+            padding-left: 0.5rem;
+        }
+
+        .con-text-validation .span-text-validation {
+            color: rgba(var(--vs-danger), 1) !important;
+        }
+    }
+}
+
+//Menu User Group
+.con-vs-dialog.editor-user-group {
+    .vs-dialog {
+        max-width: 800px;
+
+        .vs-dialog-text {
+            padding: 0;
+            overflow: visible !important;
+
+            .scroll-area {
+                max-height: calc(var(--vh, 1vh) * 100 - 280px);
+
+                &:not(.ps) {
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}

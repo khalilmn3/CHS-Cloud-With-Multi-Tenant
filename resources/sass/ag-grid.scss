@@ -1,0 +1,6 @@
+// @import '~ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham';
+@import '~ag-grid-community/src/styles/ag-theme-balham/sass/legacy/ag-theme-balham-v22-compat.scss';
+
+.ag-theme-material .ag-cell {
+    line-height: 34px;
+}

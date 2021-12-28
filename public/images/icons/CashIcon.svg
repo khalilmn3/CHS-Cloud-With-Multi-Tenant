@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="CashIcon.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1691"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.22627417"
+     inkscape:cx="2948.5096"
+     inkscape:cy="2759.1271"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="1397.1782,-19.831399"
+       orientation="0,1"
+       id="guide1673"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1557.5131,1357.5622"
+       orientation="1,0"
+       id="guide2115"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2179">
+      <rect
+         y="-676.31842"
+         x="714.21649"
+         height="444.33191"
+         width="444.33191"
+         id="rect2108"
+         style="opacity:1;fill:#800000;fill-opacity:0;stroke:#7367f0;stroke-width:0.01871374;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0.01871374, 0.07485497000000001;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         transform="translate(0,27.646682)"
+         id="g2172">
+        <path
+           inkscape:connector-curvature="0"
+           style="opacity:1;fill:#008000;fill-opacity:1;stroke:#7367f0;stroke-width:0.01502036;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:0.01502036, 0.06008146;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 935.85299,-623.0625 -222.27841,56.60273 v 228.014 l 222.27841,-56.60276 v -50.86199 l -166.15471,42.31111 V -529.8899 l 166.15471,-42.31111 z m 1.05886,0 v 50.86149 l 166.15465,42.31111 v 126.29049 l -166.15465,-42.31111 v 50.86199 l 222.27845,56.60276 v -228.014 z"
+           id="rect2131" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:252.20536804px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#00cd00;fill-opacity:1;stroke:none;stroke-width:6.30513334"
+           x="845.62299"
+           y="-431.08228"
+           id="text2122"><tspan
+             sodipodi:role="line"
+             id="tspan2120"
+             x="845.62299"
+             y="-431.08228"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#00cd00;fill-opacity:1;stroke-width:6.30513334">$</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

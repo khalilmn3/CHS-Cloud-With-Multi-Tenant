@@ -1,0 +1,1486 @@
+
+@import '@sass/vuexy/components/datepicker.scss';
+html {
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+    letter-spacing: 0.01rem;
+  }
+  // Loading indicator
+.con-vs-loading {
+    z-index: 600000;
+}
+//WIDTH VS POPUP//
+.width-80.con-vs-popup .vs-popup {
+    width: 80%;
+    max-width: 1200px ;
+  }
+
+.width-400p.con-vs-popup .vs-popup {
+    width: 400px;
+    max-width: 400px;
+}
+
+.width-450p.con-vs-popup .vs-popup {
+    width: 450px;
+    max-width: 450px;
+}
+
+.width-500p.con-vs-popup .vs-popup {
+    width: 500px;
+    max-width: 500px;
+}
+
+.width-550p.con-vs-popup .vs-popup {
+    width: 550px;
+    max-width: 550px;
+}
+
+.width-600p.con-vs-dialog .vs-dialog {
+    width: 600px;
+    max-width: 600px;
+}
+.width-800p.con-vs-popup .vs-popup {
+    width: 800px;
+    max-width: 800px;
+}
+
+//WIDTH VS DIALOG//
+.width-80.con-vs-dialog .vs-dialog {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.width-400p.con-vs-dialog .vs-dialog {
+max-width: 400px;
+}
+
+.width-450p.con-vs-dialog .vs-dialog {
+max-width: 450px;
+}
+
+.width-500p.con-vs-dialog .vs-dialog {
+    width: 500px;
+    max-width: 500px;
+}
+
+.width-550p.con-vs-dialog .vs-dialog {
+    width: 550px;
+    max-width: 550px;
+}
+
+.width-600p.con-vs-dialog .vs-dialog {
+    width: 600px;
+    max-width: 600px;
+}
+
+.width-650p.con-vs-dialog .vs-dialog {
+    width: 650px;
+    max-width: 650px;
+}
+
+.width-800p.con-vs-dialog .vs-dialog {
+    width: 800px;
+    max-width: 800px;
+}
+
+//HEIGHT V-SELECT
+.height100 .vs__dropdown-menu {
+    max-height: 100px;
+}
+.height200 .vs__dropdown-menu {
+    max-height: 200px;
+}
+.height150 .vs__dropdown-menu {
+    max-height: 150px;
+}
+.height250 .vs__dropdown-menu {
+    max-height: 250px;
+}
+.height50 .vs__dropdown-menu {
+    max-height: 50px;
+}
+.height80 .vs__dropdown-menu {
+    max-height: 80px;
+}
+
+// VUES SELECT
+.vs__dropdown-menu {
+    font-size: .8rem;
+    z-index: 530000;
+}
+
+// sidebar
+.body-sidebar{
+    margin-left: 10px
+}
+.footer-sidebar{
+    margin-left: 10px
+}
+
+//Dropdown menu
+.vs-dropdown--item .vs-dropdown--item-link {
+    font-size: .8rem;
+    width: 110%;
+    display: flex;
+    color: rgba(0,0,0,.7);
+    align-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .vs-col.content-left {
+        border-right: 1px dashed rgb(197, 197, 197);
+        padding-right: 10px;
+    }
+    .vs-col.content-right {
+        padding-left: 10px;
+    }
+    .vs-divider.divider-title  {
+        margin: 0px;
+    }
+}
+@media only screen and (min-width: 600px) {
+.form-container{
+    padding: 20px;
+    padding-top:0px
+}
+}
+.number .vs-con-input .vs-inputx{
+    text-align: end;
+}
+
+.box{
+    .vx-card__collapsible-content .vx-card__body {
+        padding: 1rem;
+    }
+    .box-body{
+        font-size: .8rem;
+        align-items: center;
+
+        textarea{
+            font-size: 0.8rem;
+        }
+        .v-select{
+            min-width:60px;
+        }
+        .transaction-search.v-select{
+            min-width: 80px;
+        }
+
+        .vs__selected-options{
+            white-space: nowrap;
+            overflow: hidden;
+            .vs__search{
+                z-index: 3;
+                position: absolute;
+                width: 100%;
+            }
+        }
+        .filter-checkbox{
+            .vs-checkbox {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+    }
+}
+
+//HIDE ICON CLOSE REGISTRATION FORM
+.registration-form {
+    .vs-popup--close{
+        display: none !important;
+    }
+}
+
+
+.form-container label .required::before,.form-container .required label::before {
+    color: #e32;
+    content: "* ";
+    display: inline;
+    white-space: pre;
+}
+.form-container h4 .required::before,.form-container .required h4::before {
+    color: #e32;
+    content: "* ";
+    display: inline;
+    white-space: pre;
+}
+
+.content-header{
+    .navigation{
+        .btn-group-resv{
+            margin-right: 10px;
+        }
+    }
+}
+
+.transaction{
+
+    .vx-card {
+        .vx-card__header {
+            background: rgba(var(--vs-primary),1);
+            padding: 1rem 1rem;
+            border-radius: 6px 6px 0 0;
+
+        }
+        .vx-card__title h4 {
+            color: white;
+        }
+    }
+    .content-header{
+        .navigation{
+            .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+                padding: 10px;
+                // margin-right: 15px;
+                // min-width: 120px;
+                }
+            }
+    }
+    .transaction-guest-information-bar{
+        label.title-width{
+            width: 85px;
+            font-weight: 550;
+        }
+        span{
+            font-weight: lighter;
+        }
+
+        .room-number span{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        .folio-number span{
+            font-size: 15px;
+            font-weight: initial;
+        }
+    }
+
+    .transaction-footer{
+        .balance{
+            label.title-width{
+                font-size: 15px;
+                width: 120px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+            span{
+                font-size: 15px;
+                float: right;
+            }
+
+        }
+    }
+    .transaction-search-bar{
+        .search-part{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-bottom: 5px;
+
+            .vs-input--input.normal {
+                font-size: .8rem;
+                height: 32px;
+            }
+            .vs-input--placeholder.normal {
+                padding-top: 0.4rem;
+                padding-right: 0.4rem;
+                padding-bottom: 0.4rem;
+            }
+            .includeIconOnly {
+                width: 38px !important;
+                height: 32px !important;
+            }
+        }
+        .room-filter{
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .reservation-status-filter{
+                .vs-checkbox {
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 3px;
+                    background: transparent;
+                }
+                .con-vs-checkbox {
+                    justify-content: flex-start !important;
+                    width: 100%;
+                }
+                .vs-checkbox-primary .vs-checkbox {
+                    border: 0px !important;
+                }
+                .vs-checkbox-primary .vs-checkbox--check {
+                    background: transparent;
+                }
+                .con-vs-chip {
+                    min-height: 30px;
+                    min-width: 100px;
+                    font-size: .7rem;
+                    float: initial;
+                    justify-content: start;
+                }
+
+                .vs-chip--text {
+                    width: 100%;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+.reservation-search-bar,.guestinhouse-search-bar{
+    .search-part{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+
+        .vs-input--input.normal {
+            font-size: .8rem;
+            height: 32px;
+        }
+        .vs-input--placeholder.normal {
+            padding-top: 0.4rem;
+            padding-right: 0.4rem;
+            padding-bottom: 0.4rem;
+        }
+        .includeIconOnly {
+            width: 38px !important;
+            height: 32px !important;
+        }
+        .mx-datepicker{
+            width: 100%;
+        }
+        .mx-calendar {
+            width: 220px;
+        }
+        .mx-calendar-content {
+            height: 220px;
+        }
+    }
+    .room-filter{
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .reservation-status-filter{
+            .vs-checkbox {
+                width: 15px;
+                height: 15px;
+                margin-right: 3px;
+                background: transparent;
+            }
+            .con-vs-checkbox {
+                justify-content: flex-start !important;
+                width: 100%;
+            }
+            .vs-checkbox-primary .vs-checkbox {
+                border: 0px !important;
+            }
+            .vs-checkbox-primary .vs-checkbox--check {
+                background: transparent;
+            }
+            .con-vs-chip {
+                min-height: 30px;
+                min-width: 100px;
+                font-size: .7rem;
+                float: initial;
+                justify-content: start;
+            }
+
+            .vs-chip--text {
+                width: 100%;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.reservation-status-grid{
+    .con-vs-chip {
+        width: 100%;
+    }
+}
+
+
+
+// .app-container {
+//     width: auto;
+//     height: 600px;
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// #grid-wrapper {
+//     display: flex;
+//     flex-direction: row;
+//     width: 100%;
+//     height: 450px;
+//     overflow: hidden;
+//     flex-grow: 1;
+// }
+
+// .filter-container {
+//     margin-bottom: 10px;
+// }
+
+// .container {
+//     padding: 10px;
+//     height: 600px;
+// }
+
+// .filter-item {
+//     margin-right: 5px;
+// }
+
+// #action {
+//     width: 30px !important;
+//     height: 28px !important;
+//     margin-right: 1px;
+// }
+
+// .vs-input--icon {
+//     top: 8px !important;
+// }
+
+
+
+// .con-select #form-select.vs-select--input {
+//     padding: 0.5rem;
+//     font-size: 0.8rem;
+//     border: 1px solid rgba(0, 0, 0, 0.2);
+// }
+
+// .filter-item .vs-con-input #search {
+//     padding-left: 2rem !important;
+// }
+
+// .vs-button {
+//     font-size: 0.8rem;
+// }
+
+// .vs-col {
+//     padding: 0px;
+// }
+//--------index order menu dropdown----------------
+.con-vs-dropdown--menu {
+    z-index: 60000;
+}
+//------------STYLE BUTTON ACTION--------------//
+
+.action-button{
+    .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
+        padding: .1rem .2rem;
+
+    }
+    .vs-icon.small {
+        font-size: 1.5rem;
+    }
+}
+// // .page-size{
+//     .vs-input--input.hasIcon {
+//         padding: 0.5rem .1rem 0.5rem 2rem;
+//     }
+//     .vs-input--input.normal {
+//         font-size: .8rem;
+//     }
+//     .con-select {
+//         width: 50%;
+//         padding: 5px;
+//         margin-top: 5px;
+//     }
+//     .page-size-select{
+//         font-size: 0.8rem;
+//         margin-top: 5px;
+//         padding: 0.5rem;
+//     }
+// }
+
+
+
+//------------STYLE FOR POPUP-----------------//
+.padding-around{
+    padding: 0.5rem;
+}
+
+.popup-general{
+    .con-text-validation .span-text-validation {
+        color: rgba(var(--vs-danger), 1) !important;
+    }
+}
+.popup-sub{
+
+    .con-text-validation .span-text-validation {
+        color: rgba(var(--vs-danger), 1) !important;
+    }
+}
+
+
+.vs-popup{
+    @media screen and (max-width:600px){
+        width: 100% !important;
+        max-width: 400px !important;
+
+        .vs-popup--content{
+            padding: 0px !important;
+        }
+    }
+    .vs-popup--content{
+        overflow: hidden;
+        .footer {
+            .btn-resv-checkin{
+                margin-right: 5px;
+            }
+        }
+        .popup-body {
+            font-size: 0.8rem;
+            .vs-radio {
+                width: 15px;
+                height: 15px;
+            }
+            .vs-textarea {
+                font-size: 0.8rem;
+            }
+            .mx-input {
+                font-size: .8rem;
+            }
+            // .con-vs-radio {
+            //     margin-top: 10px;
+            // }
+            .vs-input--input.normal {
+            // padding: 0.5rem !important;
+            font-size: 0.8rem;
+            }
+            .scroll-area-popup-form {
+                position: relative;
+                margin: auto;
+                width: 100%;
+                max-height: calc(100vh - 250px);
+            }
+        //----- FORM WIZARD ELEMENT ----//
+            //REMOVE PADDING HEADER FORM WIZARD
+            .vue-form-wizard .wizard-header {
+                padding: 0px;
+            }
+        //-----END FORM WIZARD ELEMENT----//
+
+            .image-hk-status{
+                width: 125px;
+                height: 125px;
+            }
+            .con-vs-tabs .con-ul-tabs{
+                z-index: 1
+            }
+            .vs-input {
+                width: 45%;
+                // margin-top: 5px;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+
+            // SIZE CHECKBOX
+            .vs-checkbox {
+                width: 15px;
+                height: 15px;
+            }
+
+
+            .vdp-datepicker input {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                line-height: 1.6;
+            }
+
+            .vdp-datepicker__calendar {
+                width: 98%;
+                font-size: 0.8rem;
+            }
+
+            .con-vs-checkbox {
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+
+            .vs-input--placeholder {
+                font-size: 0.8rem;
+            }
+
+            .vs-input--label {
+                font-size: 0.8rem;
+                padding-left: 0px;
+            }
+
+            .label {
+                font-size: 0.8rem;
+                padding-left: 0.5rem;
+            }
+
+            .vs-input-number {
+                margin-top: 20px;
+                font-size: 0.7rem;
+            }
+
+            .con-select {
+                width: 50%;
+                padding: 5px;
+                margin-top: 5px;
+            }
+
+            .con-input-upload {
+                width: 100%;
+            }
+
+            .wrap-form-select {
+                font-size: 0.8rem;
+                // margin-top: 4px;
+                position: relative;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .check-box-pax{
+                font-size: 0.8rem;
+            }
+
+            .vs__search, .vs__search:focus {
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                line-height: 2;
+            }
+
+            .vs__selected-options {
+
+                display: flex;
+                flex-basis: 100%;
+                flex-grow: 1;
+                flex-wrap: initial;
+                padding: 0 2px;
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                white-space: nowrap;
+            }
+            .vs__selected {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                min-width: 1px;
+            }
+            .uploader {
+                width: 135px;
+                height: 135px;
+                position: relative;
+            }
+
+            .avatar-uploader {
+                border: 1px dashed #d9d9d9 !important;
+                border-radius: 6px !important;
+                cursor: pointer !important;
+                width: 250px !important;
+                height: 250px !important;
+                position: relative !important;
+            }
+            .divider {
+                border: 1px outset #d9d9d9 !important;
+                height: 1px !important;
+            }
+            .number-input{
+                margin: 0px;
+                margin-top: auto;
+            }
+
+            .checkbox-3col{
+                margin-top: auto;
+
+            }
+            .avatar-uploader:hover {
+                border-color: #409eff;
+            }
+
+            .avatar-uploader-icon {
+                font-size: 28px;
+                color: #8c939d;
+                width: 135px;
+                height: 135px;
+                line-height: 135px;
+                text-align: center;
+            }
+
+            .avatar {
+                width: 135px;
+                height: 135px;
+                display: block;
+            }
+
+            .error-text {
+                font-size: 0.65rem;
+                padding-left: 0.5rem;
+            }
+
+            .con-text-validation .span-text-validation {
+                color: rgba(var(--vs-danger), 1) !important;
+            }
+
+            .el-form-item .el-select {
+                width: 100%;
+            }
+
+            .avatar-delete {
+                position: absolute;
+                z-index: 10;
+                right: 5px;
+                top: 5px;
+            }
+
+            .avatar-delete:hover {
+                color: crimson;
+                font-size: 20px;
+            }
+
+            .vue-avatar-cropper-demo {
+                max-width: 18em;
+                margin: 0 auto;
+            }
+
+            .avatar {
+                width: 160px;
+                border-radius: 6px;
+                display: block;
+                margin: 20px auto;
+            }
+
+            .card-img-overlay {
+                display: none;
+                transition: all 0.5s;
+            }
+
+            .card-img-overlay button {
+                margin-top: 20vh;
+            }
+
+            .card:hover .card-img-overlay {
+                display: block;
+            }
+
+            .image-container {
+                background-color: unset;
+                width: 251px;
+                height: 251px;
+                margin-top: 5px;
+                cursor: pointer !important;
+                display: inline-block;
+                border: 1px dashed #d9d9d9;
+                position: relative;
+            }
+
+            .image-content {
+                width: 250px;
+                height: 250px;
+            }
+            .image-container-64 {
+                background-color: unset;
+                width: 65px;
+                height: 65px;
+                margin-top: 5px;
+                cursor: pointer !important;
+                display: inline-block;
+                border: 1px dashed #d9d9d9;
+                position: relative;
+            }
+            .image-content-64 {
+                width: 64px;
+                height: 64px;
+            }
+
+            .image-container:hover {
+                border-color: #409eff;
+            }
+
+            .delete-image {
+                top: 3px;
+                right: 3px;
+                position: absolute;
+                cursor: pointer;
+
+                .vs-icon:hover {
+                    font-size: 1.5rem;
+                    top: 1px;
+                    right: 1px;
+                    color: crimson;
+                }
+            }
+
+
+            .upload-text {
+                position: absolute;
+                left: 25%;
+                right: 25%;
+                top: 40%;
+                font-size: 1rem;
+
+            }
+
+            #image-upload {
+                opacity: 0;
+            }
+
+            .upload-text:hover {
+                font-size: 1.2rem;
+            }
+            .footer {
+                position: absolute;
+                color: white;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+//display on mobile device
+.custom-dialog-prompt{
+    .vs-dialog {
+        @media screen and (max-width:600px){
+            width: 100% !important;
+            max-width: 400px !important;
+
+            .vs-dialog-text{
+                padding: 0px !important;
+            }
+        }
+    }
+}
+.vs-dialog{
+
+    .vs-dialog-text{
+        overflow: hidden;
+        .footer {
+            .btn-resv-checkin{
+                margin-right: 5px;
+            }
+        }
+        .popup-body {
+            font-size: 0.8rem;
+            .vs-radio {
+                width: 15px;
+                height: 15px;
+            }
+            .vs-textarea {
+                font-size: 0.8rem;
+            }
+            .mx-input {
+                font-size: .8rem;
+            }
+            // .con-vs-radio {
+            //     margin-top: 10px;
+            // }
+            .vs-input--input.normal {
+            // padding: 0.5rem !important;
+            font-size: 0.8rem;
+            }
+            .scroll-area-popup-form {
+                position: relative;
+                margin: auto;
+                width: 100%;
+                max-height: calc(100vh - 250px);
+            }
+        //----- FORM WIZARD ELEMENT ----//
+            //REMOVE PADDING HEADER FORM WIZARD
+            .vue-form-wizard .wizard-header {
+                padding: 0px;
+            }
+        //-----END FORM WIZARD ELEMENT----//
+
+            .image-hk-status{
+                width: 125px;
+                height: 125px;
+            }
+            .con-vs-tabs .con-ul-tabs{
+                z-index: 1
+            }
+            .vs-input {
+                width: 45%;
+                // margin-top: 5px;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+
+            // SIZE CHECKBOX
+            .vs-checkbox {
+                width: 15px;
+                height: 15px;
+            }
+
+
+            .vdp-datepicker input {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                line-height: 1.6;
+            }
+
+            .vdp-datepicker__calendar {
+                width: 98%;
+                font-size: 0.8rem;
+            }
+
+            .con-vs-checkbox {
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+
+            .vs-input--placeholder {
+                font-size: 0.8rem;
+            }
+
+            .vs-input--label {
+                font-size: 0.8rem;
+                padding-left: 0px;
+            }
+
+            .label {
+                font-size: 0.8rem;
+                padding-left: 0.5rem;
+            }
+
+            .vs-input-number {
+                margin-top: 20px;
+                font-size: 0.7rem;
+            }
+
+            .con-select {
+                width: 50%;
+                padding: 5px;
+                margin-top: 5px;
+            }
+
+            .con-input-upload {
+                width: 100%;
+            }
+
+            .wrap-form-select {
+                font-size: 0.8rem;
+                // margin-top: 4px;
+                position: relative;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .check-box-pax{
+                font-size: 0.8rem;
+            }
+
+            .vs__search, .vs__search:focus {
+
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                line-height: 2;
+            }
+
+            .vs__selected-options {
+
+                display: flex;
+                flex-basis: 100%;
+                flex-grow: 1;
+                flex-wrap: initial;
+                padding: 0 2px;
+                position: relative;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                white-space: nowrap;
+            }
+            .vs__selected {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                min-width: 1px;
+            }
+            .uploader {
+                width: 135px;
+                height: 135px;
+                position: relative;
+            }
+
+            .avatar-uploader {
+                border: 1px dashed #d9d9d9 !important;
+                border-radius: 6px !important;
+                cursor: pointer !important;
+                width: 250px !important;
+                height: 250px !important;
+                position: relative !important;
+            }
+            .divider {
+                border: 1px outset #d9d9d9 !important;
+                height: 1px !important;
+            }
+            .number-input{
+                margin: 0px;
+                margin-top: auto;
+            }
+
+            .checkbox-3col{
+                margin-top: auto;
+
+            }
+            .avatar-uploader:hover {
+                border-color: #409eff;
+            }
+
+            .avatar-uploader-icon {
+                font-size: 28px;
+                color: #8c939d;
+                width: 135px;
+                height: 135px;
+                line-height: 135px;
+                text-align: center;
+            }
+
+            .avatar {
+                width: 135px;
+                height: 135px;
+                display: block;
+            }
+
+            .error-text {
+                font-size: 0.65rem;
+                padding-left: 0.5rem;
+            }
+
+            .con-text-validation .span-text-validation {
+                color: rgba(var(--vs-danger), 1) !important;
+            }
+
+            .el-form-item .el-select {
+                width: 100%;
+            }
+
+            .avatar-delete {
+                position: absolute;
+                z-index: 10;
+                right: 5px;
+                top: 5px;
+            }
+
+            .avatar-delete:hover {
+                color: crimson;
+                font-size: 20px;
+            }
+
+            .vue-avatar-cropper-demo {
+                max-width: 18em;
+                margin: 0 auto;
+            }
+
+            .avatar {
+                width: 160px;
+                border-radius: 6px;
+                display: block;
+                margin: 20px auto;
+            }
+
+            .card-img-overlay {
+                display: none;
+                transition: all 0.5s;
+            }
+
+            .card-img-overlay button {
+                margin-top: 20vh;
+            }
+
+            .card:hover .card-img-overlay {
+                display: block;
+            }
+
+            .image-container {
+                background-color: unset;
+                width: 251px;
+                height: 251px;
+                margin-top: 5px;
+                cursor: pointer !important;
+                display: inline-block;
+                border: 1px dashed #d9d9d9;
+                position: relative;
+            }
+
+            .image-content {
+                width: 250px;
+                height: 250px;
+            }
+            .image-container-64 {
+                background-color: unset;
+                width: 65px;
+                height: 65px;
+                margin-top: 5px;
+                cursor: pointer !important;
+                display: inline-block;
+                border: 1px dashed #d9d9d9;
+                position: relative;
+            }
+            .image-content-64 {
+                width: 64px;
+                height: 64px;
+            }
+
+            .image-container:hover {
+                border-color: #409eff;
+            }
+
+            .delete-image {
+                top: 3px;
+                right: 3px;
+                position: absolute;
+                cursor: pointer;
+
+                .vs-icon:hover {
+                    font-size: 1.5rem;
+                    top: 1px;
+                    right: 1px;
+                    color: crimson;
+                }
+            }
+
+
+            .upload-text {
+                position: absolute;
+                left: 25%;
+                right: 25%;
+                top: 40%;
+                font-size: 1rem;
+
+            }
+
+            #image-upload {
+                opacity: 0;
+            }
+
+            .upload-text:hover {
+                font-size: 1.2rem;
+            }
+            .footer {
+                position: absolute;
+                color: white;
+                text-align: center;
+            }
+
+        }
+    }
+}
+
+.reservation{
+    .vs-popup{
+        .vs-popup--content{
+            overflow: hidden;
+            .popup-body {
+                .vs-textarea {
+                    font-size: 0.8rem;
+                }
+                .mx-input {
+                    font-size: .8rem;
+                }
+                .con-vs-radio {
+                    margin-top: 10px;
+                }
+                .vs-input--input.normal {
+                // padding: 0.5rem !important;
+                font-size: 0.8rem;
+                }
+                .con-vs-tabs .con-slot-tabs {
+                    position: relative;
+                    display: block;
+                    overflow: auto;
+                    height: calc(100vh - 220px);
+                }
+            //----- FORM WIZARD ELEMENT ----//
+                //REMOVE PADDING HEADER FORM WIZARD
+                .vue-form-wizard .wizard-header {
+                    padding: 0px;
+                }
+            //-----END FORM WIZARD ELEMENT----//
+
+                .image-hk-status{
+                    width: 125px;
+                    height: 125px;
+                }
+                .con-vs-tabs .con-ul-tabs{
+                    z-index: 1
+                }
+                .vs-input {
+                    width: 45%;
+                    // margin-top: 5px;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+
+                // SIZE CHECKBOX
+                .vs-checkbox {
+                    width: 15px;
+                    height: 15px;
+                }
+
+
+                .vdp-datepicker input {
+                    padding: 0.5rem;
+                    font-size: 0.8rem;
+                    line-height: 1.6;
+                }
+
+                .vdp-datepicker__calendar {
+                    width: 98%;
+                    font-size: 0.8rem;
+                }
+
+                .con-vs-checkbox {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    padding: 5px;
+                    font-size: 0.8rem;
+                }
+
+                .vs-input--placeholder {
+                    font-size: 0.8rem;
+                }
+
+                .vs-input--label {
+                    font-size: 0.8rem;
+                    padding-left: 0px;
+                }
+
+                .label {
+                    font-size: 0.8rem;
+                    padding-left: 0.5rem;
+                }
+
+                .vs-input-number {
+                    margin-top: 20px;
+                    font-size: 0.7rem;
+                }
+
+                .con-select {
+                    width: 50%;
+                    padding: 5px;
+                    margin-top: 5px;
+                }
+
+                .con-input-upload {
+                    width: 100%;
+                }
+
+                .wrap-form-select {
+                    font-size: 0.8rem;
+                    margin-top: 4px;
+                    position: relative;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+                .check-box-pax{
+                    font-size: 0.8rem;
+                }
+
+                .vs__search, .vs__search:focus {
+
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    line-height: 2;
+                }
+
+                .vs__selected-options {
+
+                    display: flex;
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    flex-wrap: initial;
+                    padding: 0 2px;
+                    position: relative;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                    white-space: nowrap;
+                }
+                .vs__selected {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                    min-width: 1px;
+                }
+                .uploader {
+                    width: 135px;
+                    height: 135px;
+                    position: relative;
+                }
+
+                .avatar-uploader {
+                    border: 1px dashed #d9d9d9 !important;
+                    border-radius: 6px !important;
+                    cursor: pointer !important;
+                    width: 250px !important;
+                    height: 250px !important;
+                    position: relative !important;
+                }
+                .divider {
+                    border: 1px outset #d9d9d9 !important;
+                    height: 1px !important;
+                }
+                .number-input{
+                    margin: 0px;
+                    margin-top: auto;
+                }
+
+                .checkbox-3col{
+                    margin-top: auto;
+
+                }
+                .avatar-uploader:hover {
+                    border-color: #409eff;
+                }
+
+                .avatar-uploader-icon {
+                    font-size: 28px;
+                    color: #8c939d;
+                    width: 135px;
+                    height: 135px;
+                    line-height: 135px;
+                    text-align: center;
+                }
+
+                .avatar {
+                    width: 135px;
+                    height: 135px;
+                    display: block;
+                }
+
+                .error-text {
+                    font-size: 0.65rem;
+                    padding-left: 0.5rem;
+                }
+
+                .con-text-validation .span-text-validation {
+                    color: rgba(var(--vs-danger), 1) !important;
+                }
+
+                .el-form-item .el-select {
+                    width: 100%;
+                }
+
+                .avatar-delete {
+                    position: absolute;
+                    z-index: 10;
+                    right: 5px;
+                    top: 5px;
+                }
+
+                .avatar-delete:hover {
+                    color: crimson;
+                    font-size: 20px;
+                }
+
+                .vue-avatar-cropper-demo {
+                    max-width: 18em;
+                    margin: 0 auto;
+                }
+
+                .avatar {
+                    width: 160px;
+                    border-radius: 6px;
+                    display: block;
+                    margin: 20px auto;
+                }
+
+                .card-img-overlay {
+                    display: none;
+                    transition: all 0.5s;
+                }
+
+                .card-img-overlay button {
+                    margin-top: 20vh;
+                }
+
+                .card:hover .card-img-overlay {
+                    display: block;
+                }
+
+                .image-container {
+                    background-color: unset;
+                    width: 251px;
+                    height: 251px;
+                    margin-top: 5px;
+                    cursor: pointer !important;
+                    display: inline-block;
+                    border: 1px dashed #d9d9d9;
+                    position: relative;
+                }
+
+                .image-content {
+                    width: 250px;
+                    height: 250px;
+                }
+                .image-container-64 {
+                    background-color: unset;
+                    width: 65px;
+                    height: 65px;
+                    margin-top: 5px;
+                    cursor: pointer !important;
+                    display: inline-block;
+                    border: 1px dashed #d9d9d9;
+                    position: relative;
+                }
+                .image-content-64 {
+                    width: 64px;
+                    height: 64px;
+                }
+
+                .image-container:hover {
+                    border-color: #409eff;
+                }
+
+                .delete-image {
+                    top: 3px;
+                    right: 3px;
+                    position: absolute;
+                    cursor: pointer;
+
+                    .vs-icon:hover {
+                        font-size: 1.5rem;
+                        top: 1px;
+                        right: 1px;
+                        color: crimson;
+                    }
+                }
+
+                .upload-text {
+                    position: absolute;
+                    left: 25%;
+                    right: 25%;
+                    top: 40%;
+                    font-size: 1rem;
+
+                }
+
+                #image-upload {
+                    opacity: 0;
+                }
+
+                .upload-text:hover {
+                    font-size: 1.2rem;
+                }
+
+
+            }
+        }
+    }
+}
+
+
+.image-editor {
+    #tool-editor {
+        text-align: center;
+    }
+}
