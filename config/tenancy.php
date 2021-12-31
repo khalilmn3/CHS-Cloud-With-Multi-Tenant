@@ -16,8 +16,7 @@ return [
      * Only relevant if you're using the domain or subdomain identification middleware.
      */
     'central_domains' => [
-        '127.0.0.1',
-        'localhost',
+        'localhost'
     ],
 
     /**
@@ -176,7 +175,7 @@ return [
      * storage (e.g. S3 / Dropbox) or have a custom asset controller.
      */
     'routes' => true,
-
+    'migrate_after_creation' => false,
     /**
      * Parameters used by the tenants:migrate command.
      */
