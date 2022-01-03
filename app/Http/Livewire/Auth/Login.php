@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Auth;
 
+use App\Domain;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
@@ -24,6 +25,9 @@ class Login extends Component
             if (!Auth::user()->is_email_verified) {
                 auth()->logout();
                 $this->addError('email', 'You need to confirm your account. We have sent you an activation code, please check your email.');
+                $this->password = '';
+            } else if(!(Domain::where('uid',Auth::user()->id)->where('is_ready','1'))){
+                redirect()->intended('/progress');
             } else {
                 redirect()->intended('/');
             }

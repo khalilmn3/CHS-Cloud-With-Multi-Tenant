@@ -22,6 +22,7 @@ class Register extends Component
     public $createError = '';
     public $subDomain = '';
     public $showModal = false;
+    public $btnRegister = false;
 
     protected $rules = [
         'email' => 'required|email|unique:users',
@@ -75,7 +76,7 @@ class Register extends Component
             ]);
             // Create tenan/domain
             $tenant = Tenant::create(['id' => $this->subDomain]);
-            $tenant->domains()->create(['domain' => $this->domain]);
+            $tenant->domains()->create(['domain' => $this->domain,'uid' => $createUser->id]);
 
             Mail::send('email.emailVerification', ['token' => $token], function ($message){
                 $message->to($this->email);
@@ -89,7 +90,6 @@ class Register extends Component
         } catch(\Exception $e){
             DB::rollBack();
             $this->addError('createError', 'Opss, Something is wrong!');
-            dd($e);
         }
     }
 

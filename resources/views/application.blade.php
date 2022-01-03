@@ -30,7 +30,7 @@
     </noscript>
     <div id="loading-bg">
         <div class="loading-logo">
-            <img src="/images/logo/logo.png" alt="Logo">
+            <img src="/images/logos/logo.png" alt="Logo">
         </div>
         <div class="loading">
             <div class="effect-1 effects"></div>

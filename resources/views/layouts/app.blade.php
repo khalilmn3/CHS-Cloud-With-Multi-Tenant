@@ -28,7 +28,9 @@
                         </nav>
                     </div>
                     <div class="flex-shrink-0 flex border-t border-indigo-700 p-4">
-                        <a href="/profile" class="flex-shrink-0 group block focus:outline-none">
+
+
+                        {{-- <a href="/profile" class="flex-shrink-0 group block focus:outline-none">
                             <div class="flex items-center">
                                 <div>
                                     <img class="inline-block h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
@@ -42,7 +44,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
                 <div class="flex-shrink-0 w-14">
@@ -70,7 +72,7 @@
                 </div>
 
                 <div class="flex-shrink-0 flex border-t border-indigo-700 p-4">
-                    <a href="/profile" class="flex-shrink-0 w-full group block">
+                    {{-- <a href="/profile" class="flex-shrink-0 w-full group block">
                         <div class="flex items-center">
                             <div>
                                 <img class="inline-block h-9 w-9 rounded-full" src="{{ auth()->user()->avatarUrl() }}" alt="Profile Photo">
@@ -86,21 +88,37 @@
                                 </p>
                             </div>
                         </div>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
         </div>
 
         <div class="flex flex-col w-0 flex-1 overflow-hidden">
-            <div class="md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
-                <button @click.stop="sidebarOpen = true" class="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150" aria-label="Open sidebar">
+            <div class="bg-indigo-800 flex-row flex md:justify-end justify-between sm:pl-3 items-center">
+                <button @click.stop="sidebarOpen = true" class="-ml-0.5 flex-start md:hidden -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150" aria-label="Open sidebar">
                     <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
+                <div class="relative -mt-0.5 justify-center text-left z-10 flex p-2 mr-3 items-center" x-data="{ openProfile: false }" @keydown.window.escape="openProfile = false" @click.away="openProfile = false">
+                    <div>
+                        <img class="cursor-pointer inline-block h-12 w-12 rounded-full" @click="openProfile = !openProfile" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+                    </div>
+                    <div class="inline-block cursor-pointer ">
+                        <div class="ml-3">
+                            <p class="text-base leading-6 font-medium text-white" @click="openProfile = !openProfile">
+                                Paul Weamer
+                            </p>
+                        </div>
+                        <div x-show="openProfile" class="absolute right-0 mt-2 w-24 bg-white rounded-md overflow-hidden shadow-xl z-20">
+                            <a href="/profile" class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">Profile</a>
+                            <a href="/logout" class="block px-4 py-2 text-sm text-gray-800 border-b hover:bg-gray-200">Logout</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <main class="flex-1 relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6" tabindex="0" x-data="" x-init="$el.focus()">
+            <main class="relative z-0 overflow-y-auto pt-2 pb-6 focus:outline-none md:py-6" tabindex="0" x-data="" x-init="$el.focus()">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
                     {{ $slot }}
                 </div>

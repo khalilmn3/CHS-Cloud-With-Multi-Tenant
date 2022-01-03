@@ -65,6 +65,7 @@ class Kernel extends HttpKernel
         'AccessFormUserGroup' => \App\Http\Middleware\AccessFormUserGroup::class,
         'cors' => \App\Http\Middleware\Cors::class,
         'is_verify_email' => \App\Http\Middleware\IsVerifyEmail::class,
+        'is_domain_ready' => \App\Http\Middleware\IsDomainReady::class
     ];
 
     /**
